@@ -1,0 +1,107 @@
+InsightRAG — third-party notices
+================================
+
+This repository contains code written for this project, plus references to
+software and models maintained by other people. This file records what is
+borrowed, under which license, and what that means if you reuse this project.
+
+The short version: the code is MIT. Two dependencies need attention before you
+put this behind a public URL — PyMuPDF is AGPL-3.0, and the language models
+ship under their own terms. Nothing else here restricts you.
+
+
+1. Language models (not redistributed)
+--------------------------------------
+
+This repository does not ship model weights. Setup downloads them separately,
+by name:
+
+  Qwen3-4B-Instruct-2507 (GGUF, Q4_K_M)
+      License: Apache-2.0
+      Upstream: Alibaba Cloud / Qwen team
+      Used for: answer generation
+
+  bge-base-zh-v1.5
+      License: MIT
+      Upstream: BAAI (Beijing Academy of Artificial Intelligence)
+      Used for: dense retrieval embeddings
+
+  bge-reranker-base
+      License: MIT
+      Upstream: BAAI
+      Used for: cross-encoder reranking
+
+Downloading and using them is subject to their own licenses, not this
+repository's MIT grant.
+
+
+2. Python dependencies
+----------------------
+
+  fastapi                  MIT
+  uvicorn                  BSD-3-Clause
+  python-multipart         Apache-2.0
+  faiss-cpu                MIT
+  llama-cpp-python         MIT
+  sentence-transformers    Apache-2.0
+  transformers             Apache-2.0
+  torch                    Apache-2.0 (plus BSD-2/3-Clause components)
+  rank-bm25                Apache-2.0
+  jieba                    MIT
+  numpy                    BSD-3-Clause
+  PyMuPDF (pymupdf)        AGPL-3.0 or Artifex commercial  <-- see section 3
+
+
+3. PyMuPDF is AGPL-3.0 — read this before deploying
+---------------------------------------------------
+
+PyMuPDF is dual-licensed: GNU Affero GPL v3.0, or a commercial license from
+Artifex Software. This project uses the AGPL branch.
+
+What AGPL section 13 means in practice: if you run a modified version of this
+program as a network service that other people interact with, you must offer
+those users the corresponding source code of your modified version. Running it
+locally for yourself, or for a closed group inside one organization, does not
+trigger that obligation.
+
+If you plan to host this as a public Q&A service, you have three options:
+
+  a) Publish your modifications under AGPL-3.0 as well. The simplest option,
+     and the one this project assumes.
+  b) Buy a commercial PyMuPDF license from Artifex and keep your changes closed.
+  c) Replace PyMuPDF with a permissively licensed PDF text extractor. The
+     project touches it in exactly two places — `insight_rag/parse/pdf_parser.py`
+     and `insight_rag/index/transfer.py` — both call `page.get_text("blocks")`
+     and split by x-coordinate. pdfplumber (MIT) or pypdf (BSD-3) can be
+     substituted with modest effort.
+
+This notice is a good-faith summary, not legal advice. If the distinction
+matters commercially, ask a lawyer.
+
+
+4. The corpus of academic papers
+--------------------------------
+
+The corpus is built from 14 published papers, listed in
+`data/papers_manifest.json` (title, arXiv ID, page range). Building it requires
+downloading the PDFs from arXiv yourself — `build_corpus.py` does that.
+
+This repository redistributes the manifest and the derived index statistics,
+never the papers themselves. The papers remain under their authors' and
+publishers' copyright; arXiv's terms govern your own downloads. Derived
+artifacts that this repository does commit — chunk counts, page counts,
+evaluation numbers — are facts about the corpus, not reproductions of it.
+
+The two sample documents in `data/demo/` are original fictional content written
+for this project and carry the same MIT license as the code. They were generated
+by `tools/make_demo_pdfs.py`, so you can regenerate or replace them freely.
+
+
+5. Icons, fonts and images
+--------------------------
+
+  - `web/demo.gif` is a screen recording of this project's own interface.
+  - `docs/figures/*.png` and `runs/ablation.png` are plotted from this project's
+    own result files by `tools/make_paper_figures.py`.
+  - No third-party icon sets, stock images or commercial fonts are bundled.
+    The PDF samples embed CJK glyphs supplied by PyMuPDF's built-in font set.

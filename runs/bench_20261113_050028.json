@@ -1,0 +1,1040 @@
+{
+  "timestamp": "2026-11-13T05:00:28",
+  "n_total": 100,
+  "n_valid": 95,
+  "discard": 5,
+  "retrieve": {
+    "mean": 95.4,
+    "p50": 93.3,
+    "p95": 113.5,
+    "p99": 141.1,
+    "min": 67.8,
+    "max": 165.3
+  },
+  "generate": {
+    "mean": 691.9,
+    "p50": 659.8,
+    "p95": 954.4,
+    "p99": 1014.7,
+    "min": 201.3,
+    "max": 3016.5
+  },
+  "e2e": {
+    "mean": 787.3,
+    "p50": 762.3,
+    "p95": 1064.8,
+    "p99": 1127.9,
+    "min": 282.8,
+    "max": 3095.2
+  },
+  "gen_tok_s_mean": 58.4,
+  "completion_tokens_mean": 41.1,
+  "fake_citations": 0,
+  "p95_ci": [
+    976.0,
+    1127.0
+  ],
+  "warmup_s": 33.87626576423645,
+  "rows": [
+    {
+      "i": 0,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 1177.5,
+      "generate_ms": 2432.9,
+      "total_ms": 3610.4,
+      "completion_tokens": 48,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 1,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 98.5,
+      "generate_ms": 605.9,
+      "total_ms": 704.4,
+      "completion_tokens": 38,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 2,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 86.7,
+      "generate_ms": 604.2,
+      "total_ms": 690.9,
+      "completion_tokens": 35,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 3,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 86.7,
+      "generate_ms": 591.0,
+      "total_ms": 677.6,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 4,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 100.2,
+      "generate_ms": 895.1,
+      "total_ms": 995.4,
+      "completion_tokens": 52,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 5,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 100.3,
+      "generate_ms": 636.8,
+      "total_ms": 737.1,
+      "completion_tokens": 33,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 6,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 99.3,
+      "generate_ms": 503.2,
+      "total_ms": 602.5,
+      "completion_tokens": 25,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 7,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 108.6,
+      "generate_ms": 867.1,
+      "total_ms": 975.8,
+      "completion_tokens": 55,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 8,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 93.9,
+      "generate_ms": 217.9,
+      "total_ms": 311.8,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 9,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 105.7,
+      "generate_ms": 659.8,
+      "total_ms": 765.5,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 10,
+      "q": "What is the transformer self-attention mechanism",
+      "retrieve_ms": 90.2,
+      "generate_ms": 880.0,
+      "total_ms": 970.2,
+      "completion_tokens": 67,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 11,
+      "q": "How does Sentence-BERT produce sentence embeddings",
+      "retrieve_ms": 141.1,
+      "generate_ms": 740.0,
+      "total_ms": 881.1,
+      "completion_tokens": 50,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 12,
+      "q": "What is corrective retrieval augmented generation",
+      "retrieve_ms": 104.5,
+      "generate_ms": 914.4,
+      "total_ms": 1019.0,
+      "completion_tokens": 62,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 13,
+      "q": "How does GraphRAG handle global questions over a corpus",
+      "retrieve_ms": 78.7,
+      "generate_ms": 3016.5,
+      "total_ms": 3095.2,
+      "completion_tokens": 36,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 14,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 67.8,
+      "generate_ms": 581.8,
+      "total_ms": 649.6,
+      "completion_tokens": 48,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 15,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 87.3,
+      "generate_ms": 594.0,
+      "total_ms": 681.4,
+      "completion_tokens": 38,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 16,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 93.3,
+      "generate_ms": 564.2,
+      "total_ms": 657.6,
+      "completion_tokens": 35,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 17,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 83.3,
+      "generate_ms": 582.0,
+      "total_ms": 665.3,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 18,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 102.0,
+      "generate_ms": 864.6,
+      "total_ms": 966.7,
+      "completion_tokens": 52,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 19,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 86.5,
+      "generate_ms": 569.7,
+      "total_ms": 656.2,
+      "completion_tokens": 33,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 20,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 92.6,
+      "generate_ms": 446.3,
+      "total_ms": 538.8,
+      "completion_tokens": 25,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 21,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 95.0,
+      "generate_ms": 785.3,
+      "total_ms": 880.3,
+      "completion_tokens": 48,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 22,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 81.4,
+      "generate_ms": 201.3,
+      "total_ms": 282.8,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 23,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 79.5,
+      "generate_ms": 629.7,
+      "total_ms": 709.2,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 24,
+      "q": "What is the transformer self-attention mechanism",
+      "retrieve_ms": 82.3,
+      "generate_ms": 793.7,
+      "total_ms": 876.0,
+      "completion_tokens": 63,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 25,
+      "q": "How does Sentence-BERT produce sentence embeddings",
+      "retrieve_ms": 103.3,
+      "generate_ms": 764.5,
+      "total_ms": 867.8,
+      "completion_tokens": 50,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 26,
+      "q": "What is corrective retrieval augmented generation",
+      "retrieve_ms": 84.4,
+      "generate_ms": 682.8,
+      "total_ms": 767.1,
+      "completion_tokens": 62,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 27,
+      "q": "How does GraphRAG handle global questions over a corpus",
+      "retrieve_ms": 76.3,
+      "generate_ms": 521.6,
+      "total_ms": 598.0,
+      "completion_tokens": 36,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 28,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 87.2,
+      "generate_ms": 682.7,
+      "total_ms": 769.8,
+      "completion_tokens": 48,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 29,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 87.5,
+      "generate_ms": 613.0,
+      "total_ms": 700.5,
+      "completion_tokens": 38,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 30,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 89.0,
+      "generate_ms": 547.1,
+      "total_ms": 636.2,
+      "completion_tokens": 35,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 31,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 83.5,
+      "generate_ms": 579.2,
+      "total_ms": 662.7,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 32,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 93.3,
+      "generate_ms": 750.0,
+      "total_ms": 843.3,
+      "completion_tokens": 52,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 33,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 91.2,
+      "generate_ms": 561.9,
+      "total_ms": 653.1,
+      "completion_tokens": 31,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 34,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 108.3,
+      "generate_ms": 574.6,
+      "total_ms": 682.9,
+      "completion_tokens": 25,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 35,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 113.0,
+      "generate_ms": 839.7,
+      "total_ms": 952.8,
+      "completion_tokens": 52,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 36,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 101.5,
+      "generate_ms": 265.8,
+      "total_ms": 367.3,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 37,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 100.2,
+      "generate_ms": 733.2,
+      "total_ms": 833.4,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 38,
+      "q": "What is the transformer self-attention mechanism",
+      "retrieve_ms": 93.4,
+      "generate_ms": 704.3,
+      "total_ms": 797.8,
+      "completion_tokens": 67,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 39,
+      "q": "How does Sentence-BERT produce sentence embeddings",
+      "retrieve_ms": 109.2,
+      "generate_ms": 762.7,
+      "total_ms": 871.9,
+      "completion_tokens": 50,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 40,
+      "q": "What is corrective retrieval augmented generation",
+      "retrieve_ms": 100.3,
+      "generate_ms": 831.4,
+      "total_ms": 931.6,
+      "completion_tokens": 59,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 41,
+      "q": "How does GraphRAG handle global questions over a corpus",
+      "retrieve_ms": 77.5,
+      "generate_ms": 624.7,
+      "total_ms": 702.3,
+      "completion_tokens": 36,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 42,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 101.1,
+      "generate_ms": 910.2,
+      "total_ms": 1011.3,
+      "completion_tokens": 48,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 43,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 126.0,
+      "generate_ms": 635.1,
+      "total_ms": 761.1,
+      "completion_tokens": 38,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 44,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 99.5,
+      "generate_ms": 580.4,
+      "total_ms": 679.9,
+      "completion_tokens": 35,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 45,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 83.2,
+      "generate_ms": 571.9,
+      "total_ms": 655.0,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 46,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 102.0,
+      "generate_ms": 810.6,
+      "total_ms": 912.6,
+      "completion_tokens": 52,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 47,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 90.0,
+      "generate_ms": 570.4,
+      "total_ms": 660.4,
+      "completion_tokens": 31,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 48,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 91.9,
+      "generate_ms": 605.2,
+      "total_ms": 697.1,
+      "completion_tokens": 25,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 49,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 94.9,
+      "generate_ms": 684.7,
+      "total_ms": 779.6,
+      "completion_tokens": 50,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 50,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 87.7,
+      "generate_ms": 204.0,
+      "total_ms": 291.7,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 51,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 78.4,
+      "generate_ms": 650.4,
+      "total_ms": 728.8,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 52,
+      "q": "What is the transformer self-attention mechanism",
+      "retrieve_ms": 92.5,
+      "generate_ms": 744.0,
+      "total_ms": 836.4,
+      "completion_tokens": 67,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 53,
+      "q": "How does Sentence-BERT produce sentence embeddings",
+      "retrieve_ms": 107.9,
+      "generate_ms": 741.5,
+      "total_ms": 849.4,
+      "completion_tokens": 50,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 54,
+      "q": "What is corrective retrieval augmented generation",
+      "retrieve_ms": 103.2,
+      "generate_ms": 842.8,
+      "total_ms": 946.0,
+      "completion_tokens": 62,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 55,
+      "q": "How does GraphRAG handle global questions over a corpus",
+      "retrieve_ms": 76.7,
+      "generate_ms": 634.1,
+      "total_ms": 710.9,
+      "completion_tokens": 36,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 56,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 86.1,
+      "generate_ms": 832.6,
+      "total_ms": 918.7,
+      "completion_tokens": 48,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 57,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 89.5,
+      "generate_ms": 609.4,
+      "total_ms": 698.9,
+      "completion_tokens": 38,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 58,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 87.1,
+      "generate_ms": 540.4,
+      "total_ms": 627.5,
+      "completion_tokens": 35,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 59,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 95.0,
+      "generate_ms": 667.2,
+      "total_ms": 762.3,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 60,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 95.9,
+      "generate_ms": 831.2,
+      "total_ms": 927.1,
+      "completion_tokens": 52,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 61,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 98.4,
+      "generate_ms": 622.6,
+      "total_ms": 721.0,
+      "completion_tokens": 33,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 62,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 101.9,
+      "generate_ms": 543.1,
+      "total_ms": 645.0,
+      "completion_tokens": 25,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 63,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 95.2,
+      "generate_ms": 748.3,
+      "total_ms": 843.5,
+      "completion_tokens": 49,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 64,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 102.7,
+      "generate_ms": 275.7,
+      "total_ms": 378.5,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 65,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 99.5,
+      "generate_ms": 653.0,
+      "total_ms": 752.5,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 66,
+      "q": "What is the transformer self-attention mechanism",
+      "retrieve_ms": 89.2,
+      "generate_ms": 954.4,
+      "total_ms": 1043.6,
+      "completion_tokens": 63,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 67,
+      "q": "How does Sentence-BERT produce sentence embeddings",
+      "retrieve_ms": 165.3,
+      "generate_ms": 962.5,
+      "total_ms": 1127.9,
+      "completion_tokens": 50,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 68,
+      "q": "What is corrective retrieval augmented generation",
+      "retrieve_ms": 115.7,
+      "generate_ms": 949.1,
+      "total_ms": 1064.8,
+      "completion_tokens": 62,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 69,
+      "q": "How does GraphRAG handle global questions over a corpus",
+      "retrieve_ms": 92.1,
+      "generate_ms": 644.8,
+      "total_ms": 736.9,
+      "completion_tokens": 36,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 70,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 93.2,
+      "generate_ms": 746.8,
+      "total_ms": 840.0,
+      "completion_tokens": 48,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 71,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 89.5,
+      "generate_ms": 639.3,
+      "total_ms": 728.8,
+      "completion_tokens": 38,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 72,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 95.3,
+      "generate_ms": 617.9,
+      "total_ms": 713.2,
+      "completion_tokens": 35,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 73,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 93.8,
+      "generate_ms": 714.8,
+      "total_ms": 808.6,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 74,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 72.5,
+      "generate_ms": 634.3,
+      "total_ms": 706.8,
+      "completion_tokens": 52,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 75,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 78.4,
+      "generate_ms": 479.3,
+      "total_ms": 557.7,
+      "completion_tokens": 31,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 76,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 85.1,
+      "generate_ms": 485.9,
+      "total_ms": 571.0,
+      "completion_tokens": 25,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 77,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 93.3,
+      "generate_ms": 746.0,
+      "total_ms": 839.3,
+      "completion_tokens": 55,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 78,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 86.6,
+      "generate_ms": 214.5,
+      "total_ms": 301.1,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 79,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 87.5,
+      "generate_ms": 677.4,
+      "total_ms": 764.9,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 80,
+      "q": "What is the transformer self-attention mechanism",
+      "retrieve_ms": 90.8,
+      "generate_ms": 1014.7,
+      "total_ms": 1105.6,
+      "completion_tokens": 67,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 81,
+      "q": "How does Sentence-BERT produce sentence embeddings",
+      "retrieve_ms": 110.8,
+      "generate_ms": 893.7,
+      "total_ms": 1004.4,
+      "completion_tokens": 50,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 82,
+      "q": "What is corrective retrieval augmented generation",
+      "retrieve_ms": 126.9,
+      "generate_ms": 1000.1,
+      "total_ms": 1127.0,
+      "completion_tokens": 62,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 83,
+      "q": "How does GraphRAG handle global questions over a corpus",
+      "retrieve_ms": 89.7,
+      "generate_ms": 573.0,
+      "total_ms": 662.6,
+      "completion_tokens": 36,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 84,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 87.1,
+      "generate_ms": 840.5,
+      "total_ms": 927.7,
+      "completion_tokens": 48,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 85,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 106.2,
+      "generate_ms": 695.6,
+      "total_ms": 801.8,
+      "completion_tokens": 38,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 86,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 99.5,
+      "generate_ms": 636.7,
+      "total_ms": 736.1,
+      "completion_tokens": 35,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 87,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 106.8,
+      "generate_ms": 653.2,
+      "total_ms": 760.0,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 88,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 95.0,
+      "generate_ms": 781.9,
+      "total_ms": 876.9,
+      "completion_tokens": 52,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 89,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 77.7,
+      "generate_ms": 516.9,
+      "total_ms": 594.7,
+      "completion_tokens": 31,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 90,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 85.5,
+      "generate_ms": 494.0,
+      "total_ms": 579.6,
+      "completion_tokens": 25,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 91,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 102.4,
+      "generate_ms": 804.0,
+      "total_ms": 906.4,
+      "completion_tokens": 55,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 92,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 91.3,
+      "generate_ms": 246.1,
+      "total_ms": 337.3,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 93,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 93.2,
+      "generate_ms": 758.9,
+      "total_ms": 852.1,
+      "completion_tokens": 39,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 94,
+      "q": "What is the transformer self-attention mechanism",
+      "retrieve_ms": 81.4,
+      "generate_ms": 808.6,
+      "total_ms": 890.0,
+      "completion_tokens": 63,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 95,
+      "q": "How does Sentence-BERT produce sentence embeddings",
+      "retrieve_ms": 109.8,
+      "generate_ms": 796.5,
+      "total_ms": 906.3,
+      "completion_tokens": 50,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 96,
+      "q": "What is corrective retrieval augmented generation",
+      "retrieve_ms": 113.5,
+      "generate_ms": 1000.8,
+      "total_ms": 1114.2,
+      "completion_tokens": 62,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 97,
+      "q": "How does GraphRAG handle global questions over a corpus",
+      "retrieve_ms": 100.4,
+      "generate_ms": 605.5,
+      "total_ms": 705.8,
+      "completion_tokens": 36,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 98,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 91.4,
+      "generate_ms": 803.2,
+      "total_ms": 894.6,
+      "completion_tokens": 48,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 99,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 107.0,
+      "generate_ms": 738.6,
+      "total_ms": 845.6,
+      "completion_tokens": 38,
+      "n_citations": 1,
+      "n_fake": 0
+    }
+  ]
+}

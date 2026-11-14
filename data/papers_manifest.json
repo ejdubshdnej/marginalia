@@ -1,0 +1,117 @@
+{
+  "total_pages": 248,
+  "papers": [
+    {
+      "arxiv_id": "1706.03762",
+      "title": "Attention Is All You Need",
+      "topic": "transformer",
+      "page_start": 0,
+      "page_end": 14,
+      "pages": 15
+    },
+    {
+      "arxiv_id": "1908.10084",
+      "title": "Sentence-BERT",
+      "topic": "embedding",
+      "page_start": 15,
+      "page_end": 25,
+      "pages": 11
+    },
+    {
+      "arxiv_id": "2004.04906",
+      "title": "Dense Passage Retrieval",
+      "topic": "retrieval",
+      "page_start": 26,
+      "page_end": 38,
+      "pages": 13
+    },
+    {
+      "arxiv_id": "2005.11401",
+      "title": "RAG for Knowledge-Intensive NLP",
+      "topic": "rag",
+      "page_start": 39,
+      "page_end": 57,
+      "pages": 19
+    },
+    {
+      "arxiv_id": "2104.08663",
+      "title": "BEIR Benchmark",
+      "topic": "evaluation",
+      "page_start": 58,
+      "page_end": 81,
+      "pages": 24
+    },
+    {
+      "arxiv_id": "2212.10496",
+      "title": "HyDE: Precise Zero-Shot Dense Retrieval",
+      "topic": "retrieval",
+      "page_start": 82,
+      "page_end": 92,
+      "pages": 11
+    },
+    {
+      "arxiv_id": "2305.14283",
+      "title": "Query Rewriting for Retrieval",
+      "topic": "retrieval",
+      "page_start": 93,
+      "page_end": 105,
+      "pages": 13
+    },
+    {
+      "arxiv_id": "2307.03172",
+      "title": "Lost in the Middle",
+      "topic": "long_context",
+      "page_start": 106,
+      "page_end": 123,
+      "pages": 18
+    },
+    {
+      "arxiv_id": "2309.15217",
+      "title": "RAGAS Evaluation",
+      "topic": "evaluation",
+      "page_start": 124,
+      "page_end": 131,
+      "pages": 8
+    },
+    {
+      "arxiv_id": "2310.11511",
+      "title": "Self-RAG",
+      "topic": "rag",
+      "page_start": 132,
+      "page_end": 161,
+      "pages": 30
+    },
+    {
+      "arxiv_id": "2312.10997",
+      "title": "RAG for LLMs: A Survey",
+      "topic": "survey",
+      "page_start": 162,
+      "page_end": 182,
+      "pages": 21
+    },
+    {
+      "arxiv_id": "2401.15884",
+      "title": "Corrective RAG",
+      "topic": "rag",
+      "page_start": 183,
+      "page_end": 198,
+      "pages": 16
+    },
+    {
+      "arxiv_id": "2401.18059",
+      "title": "RAPTOR",
+      "topic": "long_context",
+      "page_start": 199,
+      "page_end": 221,
+      "pages": 23
+    },
+    {
+      "arxiv_id": "2404.16130",
+      "title": "GraphRAG: From Local to Global",
+      "topic": "rag",
+      "page_start": 222,
+      "page_end": 247,
+      "pages": 26
+    }
+  ]
+}

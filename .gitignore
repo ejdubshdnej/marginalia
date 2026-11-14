@@ -1,0 +1,24 @@
+.venv/
+models/
+*.gguf
+__pycache__/
+*.pyc
+.env
+data/*.pdf
+.pytest_cache/
+data/papers/
+
+# 索引是构建产物，不进仓库（约 11 MB，可由 index.build 重建）
+runs/index/
+
+# 迁移演示的索引同样是产物，且含上传的 PDF 原件；SUMMARY.md 报告要留
+runs/transfer/*/
+!runs/transfer/SUMMARY.md
+
+# 评测产物要进仓库，方便对照 README 里的数字
+!runs/eval_v1.json
+!runs/ablation.json
+!runs/ablation.png
+!runs/bench_*.json
+
+runs/.mpl/

@@ -1,0 +1,20 @@
+[
+  {
+    "model": "bge-reranker-base",
+    "load_s": 12.8,
+    "recall_at_5": 0.8667,
+    "ndcg_at_10": 0.381,
+    "latency_mean_ms": 80.1,
+    "latency_p95_ms": 102.3,
+    "latency_max_ms": 129.4
+  },
+  {
+    "model": "bge-reranker-large",
+    "load_s": 3.5,
+    "recall_at_5": 0.8667,
+    "ndcg_at_10": 0.3924,
+    "latency_mean_ms": 246.8,
+    "latency_p95_ms": 289.7,
+    "latency_max_ms": 292.4
+  }
+]

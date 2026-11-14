@@ -1,0 +1,10 @@
+{"qid": "d01", "question": "What is the hex code for Harbor Teal in the Harbor Blue theme?", "gold_pages": [0], "answer_keys": ["#2f8f8f"], "should_refuse": false}
+{"qid": "d02", "question": "Which font is used for headings in the Pine Hollow theme?", "gold_pages": [2], "answer_keys": ["FreeSerif"], "should_refuse": false}
+{"qid": "d03", "question": "Which theme is recommended for demo days and conference talks?", "gold_pages": [5], "answer_keys": ["Night Signal"], "should_refuse": false}
+{"qid": "d04", "question": "What are the four palette colours in the Copper Dusk theme?", "gold_pages": [4], "answer_keys": ["Ochre", "Copper", "Wheat", "Umber"], "should_refuse": false}
+{"qid": "d05", "question": "Which theme is intended for engineering reviews and method sections?", "gold_pages": [3], "answer_keys": ["Graph Paper"], "should_refuse": false}
+{"qid": "d06", "question": "What mood is the Amber Field theme described as having?", "gold_pages": [1], "answer_keys": ["warm", "energetic"], "should_refuse": false}
+{"qid": "d07", "question": "What is the hex code for Mist in the Harbor Blue theme?", "gold_pages": [0], "answer_keys": ["#a9d6d8"], "should_refuse": false}
+{"qid": "d08", "question": "Which theme is recommended for field research and wellness material?", "gold_pages": [2], "answer_keys": ["Pine Hollow"], "should_refuse": false}
+{"qid": "d09", "question": "What is the maximum output resolution of the projector described here?", "gold_pages": [], "answer_keys": [], "should_refuse": true}
+{"qid": "d10", "question": "Which theme uses a font called Montserrat?", "gold_pages": [], "answer_keys": [], "should_refuse": true}

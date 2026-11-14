@@ -1,0 +1,1040 @@
+{
+  "timestamp": "2026-11-13T04:57:34",
+  "n_total": 100,
+  "n_valid": 95,
+  "discard": 5,
+  "retrieve": {
+    "mean": 91.8,
+    "p50": 92.0,
+    "p95": 117.4,
+    "p99": 126.1,
+    "min": 64.3,
+    "max": 127.5
+  },
+  "generate": {
+    "mean": 1161.0,
+    "p50": 1091.4,
+    "p95": 2541.3,
+    "p99": 2762.6,
+    "min": 170.3,
+    "max": 2885.2
+  },
+  "e2e": {
+    "mean": 1252.9,
+    "p50": 1192.3,
+    "p95": 2638.9,
+    "p99": 2860.3,
+    "min": 253.5,
+    "max": 2992.1
+  },
+  "gen_tok_s_mean": 61.6,
+  "completion_tokens_mean": 87.8,
+  "fake_citations": 0,
+  "p95_ci": [
+    2118.0,
+    2810.0
+  ],
+  "warmup_s": 31.74504780769348,
+  "rows": [
+    {
+      "i": 0,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 888.0,
+      "generate_ms": 1935.9,
+      "total_ms": 2823.9,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 1,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 94.1,
+      "generate_ms": 200.7,
+      "total_ms": 294.8,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 2,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 74.1,
+      "generate_ms": 645.3,
+      "total_ms": 719.4,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 3,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 101.7,
+      "generate_ms": 2242.4,
+      "total_ms": 2344.1,
+      "completion_tokens": 212,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 4,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 77.3,
+      "generate_ms": 1032.8,
+      "total_ms": 1110.1,
+      "completion_tokens": 88,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 5,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 82.7,
+      "generate_ms": 819.5,
+      "total_ms": 902.2,
+      "completion_tokens": 71,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 6,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 84.1,
+      "generate_ms": 1289.4,
+      "total_ms": 1373.5,
+      "completion_tokens": 131,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 7,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 65.3,
+      "generate_ms": 1193.0,
+      "total_ms": 1258.3,
+      "completion_tokens": 106,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 8,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 80.1,
+      "generate_ms": 1481.3,
+      "total_ms": 1561.4,
+      "completion_tokens": 124,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 9,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 90.7,
+      "generate_ms": 1674.8,
+      "total_ms": 1765.4,
+      "completion_tokens": 149,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 10,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 80.1,
+      "generate_ms": 213.6,
+      "total_ms": 293.7,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 11,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 69.2,
+      "generate_ms": 959.1,
+      "total_ms": 1028.3,
+      "completion_tokens": 74,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 12,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 90.2,
+      "generate_ms": 268.2,
+      "total_ms": 358.4,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 13,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 103.4,
+      "generate_ms": 237.5,
+      "total_ms": 340.9,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 14,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 92.8,
+      "generate_ms": 770.0,
+      "total_ms": 862.8,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 15,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 94.0,
+      "generate_ms": 2694.7,
+      "total_ms": 2788.7,
+      "completion_tokens": 214,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 16,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 93.2,
+      "generate_ms": 1379.6,
+      "total_ms": 1472.8,
+      "completion_tokens": 91,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 17,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 92.7,
+      "generate_ms": 999.2,
+      "total_ms": 1091.9,
+      "completion_tokens": 71,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 18,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 117.4,
+      "generate_ms": 1858.9,
+      "total_ms": 1976.3,
+      "completion_tokens": 145,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 19,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 96.8,
+      "generate_ms": 1195.8,
+      "total_ms": 1292.6,
+      "completion_tokens": 106,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 20,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 83.0,
+      "generate_ms": 1610.1,
+      "total_ms": 1693.1,
+      "completion_tokens": 131,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 21,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 87.3,
+      "generate_ms": 1585.6,
+      "total_ms": 1672.9,
+      "completion_tokens": 151,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 22,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 86.0,
+      "generate_ms": 216.1,
+      "total_ms": 302.1,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 23,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 83.1,
+      "generate_ms": 952.6,
+      "total_ms": 1035.7,
+      "completion_tokens": 72,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 24,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 93.2,
+      "generate_ms": 229.9,
+      "total_ms": 323.0,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 25,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 81.9,
+      "generate_ms": 248.5,
+      "total_ms": 330.4,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 26,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 91.7,
+      "generate_ms": 752.0,
+      "total_ms": 843.7,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 27,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 92.2,
+      "generate_ms": 2546.7,
+      "total_ms": 2638.9,
+      "completion_tokens": 214,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 28,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 85.2,
+      "generate_ms": 1272.6,
+      "total_ms": 1357.8,
+      "completion_tokens": 91,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 29,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 91.9,
+      "generate_ms": 979.1,
+      "total_ms": 1071.0,
+      "completion_tokens": 71,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 30,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 69.4,
+      "generate_ms": 1607.4,
+      "total_ms": 1676.8,
+      "completion_tokens": 145,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 31,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 92.4,
+      "generate_ms": 1438.4,
+      "total_ms": 1530.8,
+      "completion_tokens": 117,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 32,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 100.1,
+      "generate_ms": 1739.6,
+      "total_ms": 1839.7,
+      "completion_tokens": 136,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 33,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 107.2,
+      "generate_ms": 1699.8,
+      "total_ms": 1807.0,
+      "completion_tokens": 141,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 34,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 83.7,
+      "generate_ms": 211.0,
+      "total_ms": 294.7,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 35,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 81.2,
+      "generate_ms": 982.1,
+      "total_ms": 1063.3,
+      "completion_tokens": 77,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 36,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 91.0,
+      "generate_ms": 223.1,
+      "total_ms": 314.1,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 37,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 82.5,
+      "generate_ms": 198.0,
+      "total_ms": 280.4,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 38,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 79.6,
+      "generate_ms": 725.2,
+      "total_ms": 804.8,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 39,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 96.2,
+      "generate_ms": 2286.0,
+      "total_ms": 2382.2,
+      "completion_tokens": 212,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 40,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 68.5,
+      "generate_ms": 1484.8,
+      "total_ms": 1553.3,
+      "completion_tokens": 124,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 41,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 83.4,
+      "generate_ms": 976.4,
+      "total_ms": 1059.8,
+      "completion_tokens": 71,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 42,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 93.9,
+      "generate_ms": 1706.5,
+      "total_ms": 1800.4,
+      "completion_tokens": 132,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 43,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 79.4,
+      "generate_ms": 1373.8,
+      "total_ms": 1453.2,
+      "completion_tokens": 117,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 44,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 67.5,
+      "generate_ms": 1470.0,
+      "total_ms": 1537.5,
+      "completion_tokens": 122,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 45,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 96.4,
+      "generate_ms": 2118.5,
+      "total_ms": 2214.9,
+      "completion_tokens": 155,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 46,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 121.3,
+      "generate_ms": 276.4,
+      "total_ms": 397.8,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 47,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 66.4,
+      "generate_ms": 829.6,
+      "total_ms": 896.0,
+      "completion_tokens": 74,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 48,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 100.9,
+      "generate_ms": 234.3,
+      "total_ms": 335.1,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 49,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 89.1,
+      "generate_ms": 218.7,
+      "total_ms": 307.8,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 50,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 81.2,
+      "generate_ms": 723.7,
+      "total_ms": 804.9,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 51,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 94.8,
+      "generate_ms": 2459.4,
+      "total_ms": 2554.2,
+      "completion_tokens": 214,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 52,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 70.3,
+      "generate_ms": 1529.4,
+      "total_ms": 1599.7,
+      "completion_tokens": 124,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 53,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 86.7,
+      "generate_ms": 943.6,
+      "total_ms": 1030.3,
+      "completion_tokens": 71,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 54,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 96.3,
+      "generate_ms": 1694.9,
+      "total_ms": 1791.3,
+      "completion_tokens": 140,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 55,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 67.1,
+      "generate_ms": 1298.5,
+      "total_ms": 1365.6,
+      "completion_tokens": 115,
+      "n_citations": 4,
+      "n_fake": 0
+    },
+    {
+      "i": 56,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 80.7,
+      "generate_ms": 1544.4,
+      "total_ms": 1625.1,
+      "completion_tokens": 146,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 57,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 86.0,
+      "generate_ms": 1679.0,
+      "total_ms": 1765.0,
+      "completion_tokens": 145,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 58,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 88.8,
+      "generate_ms": 247.2,
+      "total_ms": 336.0,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 59,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 95.7,
+      "generate_ms": 1090.4,
+      "total_ms": 1186.1,
+      "completion_tokens": 77,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 60,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 92.0,
+      "generate_ms": 247.9,
+      "total_ms": 339.8,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 61,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 98.0,
+      "generate_ms": 226.0,
+      "total_ms": 324.1,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 62,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 84.2,
+      "generate_ms": 788.9,
+      "total_ms": 873.1,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 63,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 106.9,
+      "generate_ms": 2273.6,
+      "total_ms": 2380.5,
+      "completion_tokens": 200,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 64,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 93.0,
+      "generate_ms": 1027.0,
+      "total_ms": 1120.0,
+      "completion_tokens": 91,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 65,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 79.5,
+      "generate_ms": 892.2,
+      "total_ms": 971.6,
+      "completion_tokens": 71,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 66,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 96.5,
+      "generate_ms": 1907.6,
+      "total_ms": 2004.1,
+      "completion_tokens": 140,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 67,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 88.8,
+      "generate_ms": 1496.7,
+      "total_ms": 1585.5,
+      "completion_tokens": 106,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 68,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 106.9,
+      "generate_ms": 2885.2,
+      "total_ms": 2992.1,
+      "completion_tokens": 208,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 69,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 126.1,
+      "generate_ms": 1783.3,
+      "total_ms": 1909.3,
+      "completion_tokens": 120,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 70,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 109.7,
+      "generate_ms": 260.2,
+      "total_ms": 369.9,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 71,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 92.0,
+      "generate_ms": 1217.4,
+      "total_ms": 1309.4,
+      "completion_tokens": 77,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 72,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 102.8,
+      "generate_ms": 252.0,
+      "total_ms": 354.8,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 73,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 83.2,
+      "generate_ms": 170.3,
+      "total_ms": 253.5,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 74,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 64.3,
+      "generate_ms": 668.5,
+      "total_ms": 732.8,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 75,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 97.6,
+      "generate_ms": 2762.6,
+      "total_ms": 2860.3,
+      "completion_tokens": 214,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 76,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 125.7,
+      "generate_ms": 1235.0,
+      "total_ms": 1360.7,
+      "completion_tokens": 88,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 77,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 96.6,
+      "generate_ms": 1002.3,
+      "total_ms": 1099.0,
+      "completion_tokens": 71,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 78,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 110.7,
+      "generate_ms": 2067.1,
+      "total_ms": 2177.8,
+      "completion_tokens": 152,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 79,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 92.6,
+      "generate_ms": 1383.9,
+      "total_ms": 1476.5,
+      "completion_tokens": 106,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 80,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 89.9,
+      "generate_ms": 1722.0,
+      "total_ms": 1811.9,
+      "completion_tokens": 131,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 81,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 96.6,
+      "generate_ms": 1525.1,
+      "total_ms": 1621.6,
+      "completion_tokens": 119,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 82,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 96.8,
+      "generate_ms": 239.0,
+      "total_ms": 335.9,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 83,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 84.3,
+      "generate_ms": 1076.0,
+      "total_ms": 1160.3,
+      "completion_tokens": 77,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 84,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 100.0,
+      "generate_ms": 232.1,
+      "total_ms": 332.1,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 85,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 98.1,
+      "generate_ms": 232.3,
+      "total_ms": 330.4,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 86,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 86.6,
+      "generate_ms": 821.8,
+      "total_ms": 908.4,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 87,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 107.4,
+      "generate_ms": 2662.1,
+      "total_ms": 2769.5,
+      "completion_tokens": 214,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 88,
+      "q": "Why does the position of retrieved documents matter in long context",
+      "retrieve_ms": 92.6,
+      "generate_ms": 1761.5,
+      "total_ms": 1854.2,
+      "completion_tokens": 124,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 89,
+      "q": "How does Self-RAG decide when to retrieve",
+      "retrieve_ms": 101.0,
+      "generate_ms": 1091.4,
+      "total_ms": 1192.3,
+      "completion_tokens": 71,
+      "n_citations": 2,
+      "n_fake": 0
+    },
+    {
+      "i": 90,
+      "q": "How does DPR train its dense retriever with in-batch negatives",
+      "retrieve_ms": 127.5,
+      "generate_ms": 1691.8,
+      "total_ms": 1819.3,
+      "completion_tokens": 140,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 91,
+      "q": "What does the BEIR benchmark measure across domains",
+      "retrieve_ms": 88.2,
+      "generate_ms": 1491.8,
+      "total_ms": 1580.0,
+      "completion_tokens": 106,
+      "n_citations": 5,
+      "n_fake": 0
+    },
+    {
+      "i": 92,
+      "q": "How does HyDE generate hypothetical documents for retrieval",
+      "retrieve_ms": 119.6,
+      "generate_ms": 1724.4,
+      "total_ms": 1844.0,
+      "completion_tokens": 136,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 93,
+      "q": "What is the difference between parametric and non-parametric memory in RAG",
+      "retrieve_ms": 95.2,
+      "generate_ms": 1904.1,
+      "total_ms": 1999.3,
+      "completion_tokens": 145,
+      "n_citations": 3,
+      "n_fake": 0
+    },
+    {
+      "i": 94,
+      "q": "What are the limitations of RAG for knowledge-intensive tasks",
+      "retrieve_ms": 107.9,
+      "generate_ms": 248.4,
+      "total_ms": 356.3,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 95,
+      "q": "How does RAPTOR build a hierarchical summary tree",
+      "retrieve_ms": 85.3,
+      "generate_ms": 1035.5,
+      "total_ms": 1120.8,
+      "completion_tokens": 74,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 96,
+      "q": "What is reciprocal rank fusion and why is it used for hybrid retrieval",
+      "retrieve_ms": 100.7,
+      "generate_ms": 252.1,
+      "total_ms": 352.8,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 97,
+      "q": "Why does a cross-encoder reranker improve retrieval quality",
+      "retrieve_ms": 100.0,
+      "generate_ms": 223.0,
+      "total_ms": 322.9,
+      "completion_tokens": 3,
+      "n_citations": 0,
+      "n_fake": 0
+    },
+    {
+      "i": 98,
+      "q": "How is the RAGAS faithfulness metric computed",
+      "retrieve_ms": 90.3,
+      "generate_ms": 837.8,
+      "total_ms": 928.1,
+      "completion_tokens": 51,
+      "n_citations": 1,
+      "n_fake": 0
+    },
+    {
+      "i": 99,
+      "q": "What is the recall at 5 retrieval metric",
+      "retrieve_ms": 101.1,
+      "generate_ms": 2541.3,
+      "total_ms": 2642.4,
+      "completion_tokens": 212,
+      "n_citations": 1,
+      "n_fake": 0
+    }
+  ]
+}

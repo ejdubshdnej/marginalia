@@ -1,0 +1,26 @@
+# 默认按文本处理，但 GitHub 语言统计要能认出这是 Python 项目
+* text=auto eol=lf
+
+*.py    text diff=python
+*.md    text diff=markdown
+*.json  text
+*.jsonl text
+*.txt   text
+*.yml   text
+*.yaml  text
+*.toml  text
+*.bat   text eol=crlf
+*.sh    text eol=lf
+
+# 二进制：不要让 Git 尝试做行尾转换或 diff
+*.pdf   binary
+*.png   binary
+*.gif   binary
+*.jpg   binary
+*.jpeg  binary
+*.gguf  binary
+*.index binary
+
+# 评测产物与样例文档算「生成物」，不参与语言统计
+runs/** linguist-generated
+data/demo/** linguist-generated
