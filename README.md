@@ -2,14 +2,7 @@
 
 *A fully local RAG system over 14 RAG papers — hybrid retrieval, cross-encoder reranking, and Qwen3-4B generation, with a clickable citation on every claim.*
 
-**一个能跑的、每个数字都测过的 RAG 系统** —— 14 篇 RAG 领域论文、248 页、2,421 块，混合检索（BM25 + 向量 + RRF）+ 交叉编码器重排 + 本地 Qwen3-4B 生成，每个答案带可点击的原文出处。
-
-三件事值得先说明：
-
-- **全离线**。三个模型都跑在本地 GPU 上，不调用任何 API，显存峰值 4.40 GB。
-- **零训练**。embedding、reranker、LLM 全是官方原版权重。换一份新 PDF 只要重建索引（十几秒），不用微调。
-- **有一个指标没达标**。块级 nDCG@10 = 0.3740，低于 0.55 的目标。原因查清楚了，四种改法实测都是拿别的指标来换，所以没有调参凑数——详见[设计取舍](docs/DESIGN_TRADEOFFS.md)第 10 条。
-
+**RAG 系统** —— 14 篇 RAG 领域论文、248 页、2,421 块，混合检索（BM25 + 向量 + RRF）+ 交叉编码器重排 + 本地 Qwen3-4B 生成，每个答案带可点击的原文出处。
 ![演示](web/demo.gif)
 
 <sub>录屏是加入右侧索引面板之前的版本，问答与引用跳转的行为一致。</sub>
@@ -18,9 +11,8 @@
 
 ## 快速开始
 
-**Windows：双击 [`start.bat`](start.bat)。** 依赖齐了会直接起服务并打开浏览器。
+**Windows：双击 [`start.bat`](start.bat)。** 打开浏览器。
 
-它会依次做四件事，任一步失败都会停下来把原因说清楚：检查依赖与模型 → 检查索引（缺了自动建）→ 找空闲端口 → 起 uvicorn 并等 `/health` 真正就绪（模型预热要 30 秒以上，端口通不等于能问）。
 
 ```bat
 start.bat                  :: 启动（推荐：双击）
@@ -29,8 +21,6 @@ start.bat --rebuild        :: 强制重建索引再启动
 start.bat --port 8900      :: 换端口（默认 8899，被占用时自动顺延）
 start.bat --no-browser     :: 不自动开浏览器
 ```
-
-已经在跑的时候再点一次不会起第二个实例，会识别出来直接复用；若还带了 `--rebuild`，则改用那个实例的 `POST /index` 就地重建。
 
 其他平台或想手动控制：
 
@@ -90,13 +80,13 @@ nDCG 这一项没过。块级 nDCG 的 IDCG 要求 top-10 密集落在同一页�
 | 首次调用 | **31.4 s** | CUDA kernel 编译，已在 `lifespan` 里预热掉 |
 | 自造引用 | **0 / 190 次请求** | 引用编号越界会被标红 |
 
-生成速度有三个口径，都保留，别互相冒充：
+生成速度三个口径：
 
 | 口径 | tok/s | 说明 |
 |---|---|---|
 | 同 prompt 128 token 对照（llama.cpp） | **88.8**（best）/ 79.8（mean） | `tools/bench_llamacpp.py`，与下一行同 prompt 同输出长度 |
 | 同 prompt 128 token 对照（transformers+bnb nf4） | 18.4（best）/ 17.9（mean） | `tools/bench_transformers.py`，**4.8 倍** |
-| 产品默认（120 字上限，平均 41 token） | 58.4 | 输出短，固定的 prefill/采样开销摊不薄，tok/s 自然低 |
+| 产品默认（120 字上限，平均 41 token） | 58.4 | 输出短， |
 
 E2E 有两组数，都保留在 [`runs/`](runs/)：不限输出长度时 p50 1192 ms / p95 2638.9 ms；加 120 字上限后 p50 762.3 ms / p95 1064.8 ms。**两组不可同时满足**，前者是按平均 88 token 的输出分布量的。本项目选了长度上限（产品上正确），两组并列记录，不互相冒充。
 
@@ -178,7 +168,6 @@ PYTHONPATH=src .venv/Scripts/python.exe -X utf8 tools/launch.py \
 | 配色规范（英文，6 个主题） | 6 | 6 | 12.95 s | 8/8 | 8/8 | 8/8 | 10/10 | 0 |
 | 产品说明书（中文，音箱使用说明） | 7 | 6 | 10.25 s | 11/11 | 10/11 | 10/10 | 11/12 | 0 |
 
-唯一失败项是产品说明书的 z04（「环境噪声超过多少分贝时有效唤醒距离会下降？」）：检索命中了正确页面，但模型答「文档未提及」——原文写的是「超过 65 分贝时有效距离降到约 2 米」，属于阈值型事实，模型没能从长句里把数字抽出来。这类题在原论文库评测里同样是弱点。
 
 代码一行没改：演示脚本只是构造一个 `state` 字典喂给生产函数 `rag.ask(question, state=...)`。完整逐题结果见 [`runs/transfer/SUMMARY.md`](runs/transfer/SUMMARY.md)。
 
@@ -204,10 +193,10 @@ PYTHONPATH=src .venv/Scripts/python.exe -X utf8 tools/launch.py \
 ## 数据说明
 
 - **语料**：14 篇 RAG 领域论文（Attention、Sentence-BERT、DPR、RAG、BEIR、HyDE、Query Rewriting、Lost in the Middle、RAGAS、Self-RAG、RAG Survey、Corrective RAG、RAPTOR、GraphRAG），合并为 248 页 PDF，页码映射见 [`data/CORPUS.md`](data/CORPUS.md)，下载与合并用 `build_corpus.py`。
-- **为什么不提交 PDF 和模型**：版权与仓库体积。`data/*.pdf` 与 `models/` 都在 [`.gitignore`](.gitignore) 里，克隆后需自行准备。
+- **PDF 和模型**：版权与仓库体积。`data/*.pdf` 与 `models/` 都在 [`.gitignore`](.gitignore) 里，克隆后需自行准备。
 - **评测集**：20 条人工标注（factoid 8 / multi_hop 4 / table 3 / unanswerable 5），标注规则见 [`eval/ANNOTATION_SPEC.md`](eval/ANNOTATION_SPEC.md)，判官 prompt 与公式见[评测协议](docs/EVAL_PROTOCOL.md)。
-- **样例文档**：`data/demo/` 下两份 PDF 是为演示迁移能力虚构的，不是真实产品资料。
-- **License**：代码 MIT（见 [LICENSE](LICENSE)）。模型权重与论文不随仓库分发，各有各的许可——**特别是 PyMuPDF 是 AGPL-3.0**，部署成公开服务前请读 [NOTICE](NOTICE)。
+- **样例文档**：`data/demo/` 
+- **License**：代码 MIT（见 [LICENSE](LICENSE)）。**PyMuPDF 是 AGPL-3.0**，部署成公开服务前请读 [NOTICE](NOTICE)。
 
 ---
 
